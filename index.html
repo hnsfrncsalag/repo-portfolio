@@ -58,55 +58,82 @@
       font-style: italic;
     }
 
-    .section2 {
+    .section1 {
+      padding: 0;
+  }
+
+  .section2 {
       position: relative;
       padding: 20px;
       min-height: 100vh;
       background-color: #ebebde;
-    }
+  }
 
-    .section2 div{
+  .section2 div {
       position: absolute;
       top: 30%;
       left: 35%;
-      text-align: left; /* Aligns all text to the left */
+      text-align: left;
       transform: translate(-30%, -25%);
-    }
+  }
 
-    .h5 {
+  .h5 {
       color: #414747;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 1.5rem;
-      margin: 0; 
+      margin: 0;
       filter: drop-shadow(0px 0px 5px #ebebeb);
       transition: filter 0.3s ease;
-    }
+  }
 
-    .h1, .hh1 {
+  .h1, .hh1 {
       color: #414747;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      text-align: left; 
-      margin: 0; 
+      text-align: left;
+      margin: 0;
       padding: 5px 0;
-    }
+  }
 
-    .h1 {
+  .h1 {
       font-size: 3.5rem;
-    }
+  }
 
-    .hh1 {
+  .hh1 {
       font-size: 3rem;
       opacity: 0.8;
-    }
+  }
 
-    .hh5 {
+  .hh5 {
       color: grey;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 1.2rem;
       line-height: 1.5;
       margin-top: 20px;
       opacity: 1;
-    }
+  }
+
+  .btn-email {
+      font-size: 1.2rem;
+      color: #414747;
+      padding: 12px 24px;
+      border: 4px solid #414747;
+      background-color: transparent;
+      border-radius: 7px;
+      margin-top: 30px;
+      box-shadow: 0px 0px 20px 0px rgba(235, 235, 235, 0.5);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .btn-email:hover {
+      background-color: #777764;
+      color: #414747;
+  }
+
+  .modal-custom-lg {
+      max-width: 90vw;
+      padding-left: 30px;
+  }
 
     .btn-email {
       font-size: 1.2rem;
@@ -169,9 +196,6 @@
       }
     }
     
-    
-
-
     .LN {
       border: 4px solid #ebebeb;
       border-radius: 100px;
@@ -183,37 +207,20 @@
       margin: 0;      
     }
 
-    .btn{
+    .btn-email{
       font-size: 20px;
       color: #414747;
       margin-top: 3px;
       border: 2px solid #414747;
       box-shadow: 0px 0px 20px 0px rgba(235, 235, 235, 0.5);
-      background-color: #ebebeb;
-    }
-    #resume{
-      padding-left: 10px;
-    }
-    #me-icon,
-    #proj-icon,
-    #edu-icon,
-    #home-icon {
-      text-decoration: none;
-      color: #414747;
-      font-size: 20px;
-      display: inline-flex;
-      align-items: center;
-      padding-left: 3px;
-      padding-right: 50px;
-      padding-top: 10px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #777764;
     }
     #home-icon{
       padding-left: 5px;
       padding-bottom: 10px;
     }
     .fas.fa-home{
-      padding-left: 20px;
+      padding-left: 10px;
       padding-bottom: 5px
     }
 
@@ -222,19 +229,13 @@
       color: #777764 !important;
       font-weight: bolder !important;
         }
+    
+    
 
     i {
       color: #ebebeb;
       filter: drop-shadow(0px 0px 10px #ebebeb);
       font-size: 24px;
-    }
-
-    #me-icon:hover,
-    #proj-icon:hover,
-    #edu-icon:hover,
-    #home-icon:hover,
-    .btn:hover {
-      color: #ebebeb; 
     }
 
     /* Media query for screens below 1000px */
@@ -366,89 +367,101 @@
       padding: 0;
       margin: 0;
       list-style: none;
-      gap: 10px; /* Gap between buttons */
+      gap: 10px; /* Default gap */
     }
-
+    
     .topnav a {
       color: #f2f2f2;
       text-align: center;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 17px; /* Ensure consistent font size */
       display: flex;
       align-items: center;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-family: Georgia, 'Times New Roman', Times, serif;
     }
-
+    
+    .topnav a:hover {
+      background-color: #575757;
+      color: #fff;
+    }
+    
     .topnav a i {
       margin-right: 8px;
     }
-
+    
     .topnav button {
-      font-size: 17px;
-      color: white;
+      font-size: 17px; /* Ensure consistent font size for buttons */
+      color: #f2f2f2;
       background-color: #777764;
       border: none;
-      padding: 8px 16px;
+      padding: 10px 15px;
       cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
-
+    
     .topnav button:hover {
-      background-color: #ddd;
-      color: black;
+      background-color: #555;
+      color: #fff;
     }
-
-    /* For larger screens */
-    @media (min-width: 1000px) {
-      .topnav a span {
-        display: inline;
-      }
+    
+    .topnav .nav-item.active a {
+      color: #fff;
     }
-
-    /* For screens smaller than 1000px */
-    @media (max-width: 1000px) {
+    
+    /* Media Queries */
+    @media (max-width: 700px) {
       .topnav a span {
         display: none;
       }
-
+    
       .topnav ul {
         justify-content: space-between;
-        gap: 8px;
+        gap: 8px; /* Adjust gap for smaller screens */
       }
     }
-
-    /* For screens smaller than 400px */
-    @media (max-width: 500) {
+    
+    @media (max-width: 700px) {
       .topnav ul {
-        gap: 3px; /* Reduced gap between buttons */
-      }
-
-      .topnav button {
-        font-size: 8px; 
-        padding: 3px 8px; /* Smaller button padding */
-      }
-
-      .topnav a i {
-        font-size: 1.2rem; /* Adjust icon size */
+        gap: 5px; /* Adjust gap for even smaller screens */
       }
     }
-
-    /* For screens smaller than 300px */
+    
+    @media (max-width: 500px) {
+      .topnav ul {
+        gap: 3px; /* Adjust gap for mobile screens */
+      }
+    
+      .topnav button {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+    
+      .topnav a i {
+        font-size: 1.2rem;
+      }
+    }
+    
     @media (max-width: 300px) {
       .topnav ul {
         flex-direction: column;
         align-items: center;
-        gap: 3px; /* Reduced gap between buttons */
+        gap: 3px; /* Reduced gap for very small screens */
       }
-
+    
       .topnav button {
-        font-size: 6px;
-        padding: 3px 6px;
+        font-size: 12px;
+        padding: 6px 10px;
       }
-
+    
       .topnav a i {
         font-size: 1.2rem;
       }
-     
     }
+
   </style>
 </head>
 <body class="body">
@@ -457,9 +470,6 @@
       <div class="container-fluid">
         <div class="topnav">
           <ul>
-            <li class="nav-item">
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#resume">Resume</button>
-            </li>
             <li class="nav-item active">
               <a href="index.html" id="home-icon">
                 <i class="fas fa-home"></i><span>Home</span>
@@ -476,9 +486,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="Education.html" class="edu-icon">
-                <i class="fa-solid fa-user-graduate"></i><span>My Education</span>
-              </a>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#resume">Resume</button>
             </li>
           </ul>
         </div>
@@ -516,24 +524,17 @@
 </div>
   </section>
 
-  <div class="container">
-    <section class="section2">
-      <div>
-        <h5 class="h5">Hi, my name is</h5>
-        <h1 class="h1">Hans Francis Alag.</h1>
-        <h1 class="hh1">I build Websites and Web Applications.</h1>
-        <h5 class="hh5">
-          I am an aspiring Web Developer who is eager for success, focuses on the needs and wants of the client/customer, 
-          and will give you full attention to produce a high-quality product to achieve your utmost satisfaction.
-          I will be your personal Web Developer for the duration of the project. 
-          <span class="span1">Contact me!</span>
-        </h5>
+  <section class="section2">
+    <div>
+        <h5 class="h5">Welcome to My Online Portfolio</h5>
+        <h1 class="h1">Hi, I'm Hans Francis Alag</h1>
+        <h1 class="hh1">Web Developer | Programmer</h1>
+        <p class="hh5">I am passionate about creating innovative and dynamic web solutions. Explore my portfolio to see my work and learn more about my skills and experience.</p>
         <form action="mailto:hansfrancisalag11@gmail.com?subject=Inquiry%20for%20a%20project&body=I%20wanted%20to%20contact%20you%20..." method="post" enctype="text/plain">
           <button type="submit" class="btn-email">Email Me! &nbsp; &RightArrow;</button>
         </form>
-      </div>
-    </section>
-  </div>
+    </div>
+</section>
 <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
     </main>
   </body>
