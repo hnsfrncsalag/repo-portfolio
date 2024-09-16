@@ -27,23 +27,24 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <style>
     h1 {
       text-align: center;
       padding: 5px;
       margin-top: 15%;
-      color: white;
+      color: #414747;
     }
     h3 {
       text-align: center;
-      color: white;
+      color: #414747;
     }
     a {
       font-size: 20px;
-      color: white;
+      color: #414747;
       text-decoration: none;
-      color: white;
+      color: #414747;
       padding-right: 50px;
       text-align: right;
     }
@@ -51,212 +52,214 @@
       text-align: center;
     }
     .body {
-      background-color: #191970;
+      background-color: #ebebde;
     }
     .name {
       font-style: italic;
     }
 
-    .section2 {
+    .section1 {
+      padding: 0;
+  }
+
+  .section2 {
       position: relative;
       padding: 20px;
       min-height: 100vh;
-      background-color: #191970;
-    }
+      background-color: #ebebde;
+  }
 
-    .section2 div{
+  .section2 div {
       position: absolute;
       top: 30%;
       left: 35%;
-      text-align: left; /* Aligns all text to the left */
+      text-align: left;
       transform: translate(-30%, -25%);
-    }
+  }
 
-    .h5 {
-      color: #3e8e41;
-      font-family: cursive;
+  .h5 {
+      color: #414747;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 1.5rem;
-      margin: 0; /* Ensure there's no margin affecting the alignment */
-      filter: drop-shadow(0px 0px 5px #3e8e41);
+      margin: 0;
+      filter: drop-shadow(0px 0px 5px #ebebeb);
       transition: filter 0.3s ease;
-    }
+  }
 
-    .h1, .hh1 {
-      color: white;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      text-align: left; /* Ensure left alignment */
-      margin: 0; /* Remove margin to ensure they align with h5 */
-      padding: 10px 0; /* Adjust padding to space out the text slightly */
-    }
+  .h1, .hh1 {
+      color: #414747;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: left;
+      margin: 0;
+      padding: 5px 0;
+  }
 
-    .h1 {
+  .h1 {
       font-size: 3.5rem;
-    }
+  }
 
-    .hh1 {
+  .hh1 {
       font-size: 3rem;
       opacity: 0.8;
-    }
+  }
 
-    .hh5 {
+  .hh5 {
       color: grey;
-      font-family: cursive;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 1.2rem;
       line-height: 1.5;
       margin-top: 20px;
       opacity: 1;
-    }
+  }
 
-    .btn-email {
+  .btn-email {
       font-size: 1.2rem;
-      color: white;
+      color: #414747;
       padding: 12px 24px;
-      border: 4px solid #3e8e41;
+      border: 4px solid #414747;
       background-color: transparent;
       border-radius: 7px;
       margin-top: 30px;
-      box-shadow: 0px 0px 20px 0px rgba(15, 186, 10, 1);
-      text-decoration: none;
+      box-shadow: 0px 0px 20px 0px rgba(235, 235, 235, 0.5);
       cursor: pointer;
       transition: background-color 0.3s ease;
+  }
+
+  .btn-email:hover {
+      background-color: #777764;
+      color: #414747;
+  }
+
+  .modal-custom-lg {
+      max-width: 90vw;
+      padding-left: 30px;
+  }
+
+  .btn-email {
+    font-size: 17px;
+    color: #f2f2f2; /* Text color */
+    background-color: #777764; /* Default background color */
+    border: 2px solid #777764; 
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Hover Styles for the Email Button */
+  .btn-email:hover {
+    background-color: #ebebeb; /* Background color on hover */
+    color: #777764; /* Text color on hover */
+  }
+    .navbar{
+      background-color: #777764;
     }
 
-    .btn-email:hover {
-      background-color: #3e8e41;
-      color: white;
-    }
-
-    /* Media query for responsiveness */
-    @media (max-width: 1000px) {
+   
+    @media (max-width: 300px) {
       .section2 div {
-        top: 20%;
-        left: 10%;
-        transform: translate(-10%, -20%);
+        top: 10%; 
+        left: 50%; 
+        transform: translate(-50%, -10%); 
         text-align: center;
+        padding: 10px; /* Reduced padding for smaller screens */
       }
-
+    
       .h1 {
-        font-size: 2.5rem;
-        text-align: center;
+        font-size: 1.8rem; 
+        text-align: center; 
+        margin: 5px 0; 
+        line-height: 1; 
+        
       }
-
+    
       .hh1 {
-        font-size: 2rem;
+        font-size: 1.5rem; /* Adjust font size for readability */
         text-align: center;
-        justify-content: center;
+        margin: 10px 0; /* Adjust margin */
       }
-
+    
       .hh5 {
-        font-size: 1rem;
-        padding: 0 20px;
-        text-align: center;
-        justify-content: center;
+        font-size: 0.9rem; /* Adjust font size */
+        text-align: center; 
+        margin: 8px 0; /* Adjust margin */
+        padding: 0 10px; /* Reduce horizontal padding */
       }
-
+    
       .btn-email {
-        font-size: 1rem;
-        padding: 10px 20px;
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding */
+        text-align: center; 
+        margin: 15px 0; /* Adjust margin */
       }
     }
-
-
+    
     .LN {
-        border: 4px solid #3e8e41;
-        border-radius: 100px;
-        box-shadow: 0px 0px 20px 0px rgba(15, 186, 10, 1);
+      border: 4px solid #ebebeb;
+      border-radius: 100px;
+      box-shadow: 0px 0px 20px 0px rgba(235, 235, 235, 0.5);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      position: sticky; 
+      top: 1px;     
+      right: 35px;    
+      margin: 0;      
+    }
+
+    #home-icon{
+      padding-left: 5px;
+      padding-bottom: 10px;
+    }
+    .fas.fa-home{
+      padding-left: 10px;
+      padding-bottom: 5px
+    }
+
+    .nav-item.active a {
+      text-decoration: underline !important;
+      color: #777764 !important;
+      font-weight: bolder !important;
+        }
+    
+    
+
+    i {
+      color: #ebebeb;
+      filter: drop-shadow(0px 0px 10px #ebebeb);
+      font-size: 24px;
+    }
+
+    /* Media query for screens below 1000px */
+    @media (max-width: 1000px) {
+      #me-icon,
+      #home-icon,
+      #edu-icon,
+      #proj-icon {
+        font-size: 1rem; 
         font-family: Georgia, 'Times New Roman', Times, serif;
-        position: sticky; 
-        top: 1px;     
-        right: 35px;    
-        margin: 0;      
+        display: inline;
       }
-  
-      .btn{
-        font-size: 20px;
-        color: white;
-        margin-top: 3px;
-        border: 2px solid #3e8e41;
-        box-shadow: 0px 0px 20px 0px rgba(15, 186, 10, 1);
-        background-color: #3e8e41;
-      }
-      .me-icon,
-      .proj-icon,
-      .edu-icon,
-      .home-icon {
-        text-decoration: none;
-        color: White;
-        font-size: 20px;
-        display: inline-flex;
-        align-items: center;
-        padding-left: 3px;
-        padding-right: 50px;
-        padding-top: 10px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-      }
-  
-      .nav-item.active a {
-        text-decoration: underline !important;
-        color: #3e8e41 !important;
-        font-weight: bolder !important;
-          }
-  
+
       i {
-        color: #3e8e41;
-        filter: drop-shadow(0px 0px 10px #3e8e41);
-        font-size: 24px;
+        font-size: 15px; 
       }
-  
-      .me-icon:hover,
-      .proj-icon:hover,
-      .edu-icon:hover,
-      .home-icon:hover,
-      .btn:hover {
-        color: #3e8e41; 
+      .fas.fa-user{
+        padding-left: 1.5px;
       }
-  
-      /* Media query for screens below 1000px */
-      @media (max-width: 1000px) {
-        .me-icon,
-        .home-icon,
-        .edu-icon,
-        .proj-icon {
-          font-size: 0.8rem; 
-        }
-  
-        i {
-          font-size: 15px; 
-        }
-  
-        .me-icon{
-          padding-left: 12px; 
-        }
-        .home-icon{
-          padding-left: 10px; 
-  
-        }
-        .edu-icon{
-          padding-left: 11px; 
-        }
-        .proj-icon {
-          padding-left: 8px; 
-        }
-        .fas.fa-user{
-          padding-left: 1.5px;
-        }
-        .fa-solid.fa-user-graduate{
-          padding-left: 1px;
-        }
-        .btn{
-          font-size: .8rem;
-        }
-        .LN{
-          font-size: 1rem;
-          position: relative; 
-          top: -110px;     
-          right: 0;    
-          margin: 0;    
-        }
+      .fa-solid.fa-user-graduate{
+        padding-left: 1px;
       }
+      .btn{
+        font-size: .8rem;
+      }
+      .LN{
+        font-size: 1rem;
+        position: relative; 
+        top: -120px;     
+        right: 0;    
+        margin: 0;    
+      }
+    }
 
     body {
       background-color: #f8f9fa;
@@ -266,7 +269,14 @@
       width: 100%;
       border-radius: 8px;
       align-items: center;
-      padding-top: auto;
+      box-shadow: 0px 0px 20px 0px rgba(235, 235, 235, 0.171)
+
+    }
+    @media (max-width: 400px) {
+      .container{
+        padding-top: -10px;
+
+      }
     }
 
     .modal-custom-lg {
@@ -286,46 +296,195 @@
       padding-top: 10px
     } 
 
-  </style>
-  <body class="body">
-    <section class="section1">
-    <main>
-      <div class="container-fluid overflow-hidden">
-        <div class="row overflow-auto">
-            <!-- <div class="col-12 col-sm-3 shadow-sm col-xl-2 px-sm-2 px-0 d-flex sticky-top navbar navbar-expand-lg w-100"> -->
-    <nav class="navbar navbar-expand-lg w-100">
-      <div class="container-fluid">
-        <!-- <h1 class="name">My Portfolio</h1> -->
-      
 
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
-            <i class="fas fa-home"></i>
-            <a href="index.html" class="home-icon">Home</a>
-          </li>
-          <li class="nav-item">
-            <i class="fas fa-user"></i>
-            <a href="AboutMe.html" class="me-icon">About Me</a>
-          </li>
-          <li class="nav-item active">
-            <i class="fa-solid fa-laptop-code"></i>
-            <a href="Project.html" class="proj-icon">My Projects</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-user-graduate"></i>
-            <a href="Education.html" class="edu-icon">My Education</a>
-          </li>
-          <li>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#resume">Resume</button>
-          </li>
-        </ul>
-          <div>
-            <h1 class="LN">H&G</h5>
-          </div>
-      </div>
-    </nav>
+
+    #scrollTopBtn {
+      display: none; 
+      position: fixed; 
+      bottom: 30px; 
+      right: 30px; 
+      z-index: 99; 
+      font-size: 30px; 
+      background-color: #777764;
+      color: #414747; 
+      border: none; 
+      outline: none; 
+      cursor: pointer; 
+      padding: 15px; 
+      border-radius: 100%; 
+      width: 3%;
+      height: 7%;
+      box-shadow: 0px 0px 20px 0px rgba(235, 235, 235, 0.5)
+; 
+    }
     
+    /* Media query for screens below 1000px */
+    @media (max-width: 1400px) {
+      #scrollTopBtn {
+        width: 8%; 
+        height: 8%; 
+        bottom: 20px; 
+        right: 20px; 
+        font-size: 20px; 
+        padding: 10px; 
+      }
+    }
 
+    #scrollTopBtn:hover {
+      background-color: #414747;
+      color: white;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container-fluid {
+      padding: 0;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      padding: 5px 0;
+    }
+
+    .topnav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      gap: 10px; /* Default gap */
+    }
+    
+    .topnav a {
+      color: #f2f2f2;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px; /* Ensure consistent font size */
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .topnav a:hover {
+      background-color: #575757;
+      color: #fff;
+    }
+    
+    .topnav a i {
+      margin-right: 8px;
+    }
+    
+    .topnav button {
+      font-size: 17px; /* Ensure consistent font size for buttons */
+      color: #f2f2f2;
+      background-color: #777764;
+      border: 2px solid #777764;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .topnav button:hover {
+      background-color: #ebebeb;
+      color: #555;
+    }
+    
+    .topnav .nav-item.active a {
+      color: #fff;
+    }
+    
+    /* Media Queries */
+    @media (max-width: 700px) {
+      .topnav a span {
+        display: none;
+      }
+    
+      .topnav ul {
+        justify-content: space-between;
+        gap: 8px; /* Adjust gap for smaller screens */
+      }
+    }
+    
+    @media (max-width: 700px) {
+      .topnav ul {
+        gap: 5px; /* Adjust gap for even smaller screens */
+      }
+    }
+    
+    @media (max-width: 500px) {
+      .topnav ul {
+        gap: 3px; /* Adjust gap for mobile screens */
+      }
+    
+      .topnav button {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+    
+      .topnav a i {
+        font-size: 1.2rem;
+      }
+    }
+    
+    @media (max-width: 300px) {
+      .topnav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 3px; /* Reduced gap for very small screens */
+      }
+    
+      .topnav button {
+        font-size: 12px;
+        padding: 6px 10px;
+      }
+    
+      .topnav a i {
+        font-size: 1.2rem;
+      }
+    }
+
+  </style>
+</head>
+<body class="body">
+  <section class="section1">
+    <main>
+      <div class="container-fluid">
+        <div class="topnav">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" id="home-icon">
+                <i class="fas fa-home"></i><span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="AboutMe.html" class="me-icon">
+                <i class="fas fa-user"></i><span>About Me</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a href="Project.html" class="proj-icon">
+                <i class="fa-solid fa-laptop-code"></i><span>My Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#resume">Resume</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </section>
+      
     <div
       class="modal fade"
       id="resume"
@@ -355,8 +514,8 @@
 </div>
 </div>
   </section>
-  
-  
+
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
     </main>
   </body>
   <script>
@@ -364,5 +523,23 @@
       var menu = document.getElementById("dropdownMenu");
       menu.classList.toggle("show");
     }
+    
   </script>
+  <script>
+
+    window.onscroll = function() { scrollFunction(); };
+  
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+      } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+      }
+    }
+  
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  
 </html>
