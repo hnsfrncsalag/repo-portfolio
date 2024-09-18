@@ -147,11 +147,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
-  /* Hover Styles for the Email Button */
-  .btn-email:hover {
-    background-color: #ebebeb; /* Background color on hover */
-    color: #777764; /* Text color on hover */
-  }
     .navbar{
       background-color: #777764;
     }
@@ -371,6 +366,7 @@
       display: flex;
       align-items: center;
       padding: 10px 15px;
+      margin-right: 50px;
       border-radius: 5px;
       transition: background-color 0.3s ease, color 0.3s ease;
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -382,7 +378,7 @@
   }
   
   .topnav a i {
-      margin-right: 8px;
+      margin-right: 15px;
   }
   
   .topnav button {
@@ -410,8 +406,10 @@
   }
   
   .topnav .letter {
-      font-size: 30px;
-      padding-right: 20px; /* Adds spacing between the letter and the right edge */
+      padding-left: 20px;  
+      width: 170px;
+      height: 50px;
+
   }
   
   /* Media Queries */
@@ -440,8 +438,7 @@
       }
   
       .topnav-right .letter {
-          font-size: 24px;
-          padding-right: 10px;
+          padding-right: 20px;
       }
   }
   
@@ -553,7 +550,7 @@
         height: 350px;
         width: 300px; 
         bottom: 20%;
-        left: 150%;
+        left: 10%;
     }
   }
     @media (max-width: 800px) {
@@ -572,7 +569,115 @@
             left: 100%;
         }
 }
-  
+
+.css {
+  position: absolute;
+  bottom: -10%;
+  left: -20%;
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0px 0px 10px rgba(86, 174, 255, 3));
+  animation-name: css;
+  animation-duration: 3s;
+  animation-direction: normal; 
+  animation-iteration-count: infinite;
+}
+
+@keyframes css {
+  0%   {background-color: none; left: 50px; top: 0px;}
+  25%  {background-color: none; left: 0px; top: 0px;}
+  50%  {background-color: none; left: 50px; top: 0px;}
+  100% {background-color: none; left: 50px; top: 0px;}
+}
+
+
+.js {
+  position: absolute;
+  top: 100%; /* Initial position */
+  left: -15%; /* Initial position */
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 0, 0.5)); /* Adjusted opacity */
+  animation-name: js;
+  animation-duration: 4s;
+  animation-direction: normal; /* Runs forward and repeats */
+  animation-iteration-count: infinite;
+}
+
+@keyframes js {
+  0%   {background-color: none; left: -15%; top: 90%;} /* Initial position */
+  25%  {background-color: none; left: 0%; top: 90%;} /* Moves right */
+  50%  {background-color: none; left: -15%; top: 90%;} /* Moves up */
+  100% {background-color: none; left: -15%; top: 90%;} /* Returns to initial position */
+}
+
+
+.bt {
+  position: absolute;
+  top: 10%; 
+  left: 120%;
+  transform: translateY(-100%); /* Shifting it above the image */
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(0px 0px 10px rgba(137, 77, 248, 0.5)); /* Adjusted opacity */
+  animation-name: bt;
+  animation-duration: 2s;
+  animation-direction: normal; /* Runs forward and repeats */
+  animation-iteration-count: infinite;
+}
+
+@keyframes bt {
+  0%   {left: 120%;} 
+  25%  {left: 100%;} 
+  50%  {left: 120%;} 
+  75%  {left: 100%;} 
+  100% {left: 120%;}
+}
+
+
+.html {
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  width: 150px;
+  height: 150px;
+   filter: drop-shadow(0px 0px 10px rgba(255, 148, 59, 3));
+   animation-name: html;
+   animation-duration: 5s;
+   animation-direction: normal;
+   animation-iteration-count: infinite;
+}
+
+@keyframes html {
+  0%   {top: 90%;} 
+  25%  {top: 120%;} 
+  50%  {top: 90%;} 
+  75%  {top: 120%;} 
+  100% {top: 90%;}
+}
+
+.php {
+  position: relative;
+  top: 0;
+  left: 70%;
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(0px 0px 10px rgba(86, 174, 255, 0.5)); /* Adjusted opacity */
+  animation-name: php;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes php {
+  0%   {top: 0%;} 
+  25%  {top: 30%;} 
+  50%  {top: 0%;} 
+  75%  {top: 30%;} 
+  100% {top: 0%;}
+}
+
+
   
   </style>
 </head>
@@ -604,7 +709,7 @@
             </li>
           </ul>
           <div class="topright-nav">
-          <a href="#" class="letter">H.</a>
+          <img src="media/logo.png" alt="Portfolio logo" class="letter">
         </div>
         </div>
       </div>
@@ -644,13 +749,18 @@
   <div class="container">
   <section class="section2">
     <div>
+      <img src="media/css.png" alt="CSS" class="css">
+      <img src="media/js.png" alt="JS" class="js">
+      <img src="media/PHP.png" alt="CSS" class="php">
+      <img src="media/html.png" alt="CSS" class="html">
+      <img src="media/bootstrap.png" alt="bootstrap" class="bt">
         <h5 class="h5">Welcome to My Online Portfolio</h5>
         <h1 class="h1">Hi, I'm Hans Francis Alag</h1>
         <h1 class="hh1">Web Developer | Programmer</h1>
         <p class="hh5">I am passionate about creating innovative and dynamic web solutions. Explore my portfolio <br> to see my work and learn more about my skills and experience.</p>
-        <form action="mailto:hansfrancisalag11@gmail.com?subject=Inquiry%20for%20a%20project&body=I%20wanted%20to%20contact%20you%20..." method="post" enctype="text/plain">
-          <button type="submit" class="btn-email">Email Me! &nbsp; &RightArrow;</button>
-        </form>
+        <div class="image-container">
+
+        </div>
         <div class="image-container">
           <img src="media/photo.png" alt="My Image" class="img-me">
         </div>
