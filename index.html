@@ -192,6 +192,7 @@
         padding: 8px 16px; /* Adjust padding */
         text-align: center; 
         margin: 15px 0; /* Adjust margin */
+        box-shadow: 0px 0px 20px 0px rgba(235, 235, 235, 0.5);
       }
     }
     
@@ -342,25 +343,27 @@
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
     }
-
+    
     .container-fluid {
       padding: 0;
     }
-
+    
     .topnav {
-      overflow: hidden;
+      display: flex;
+      justify-content: space-between; /* This ensures the space between left and right sections */
+      align-items: center;
       background-color: #333;
       padding: 5px 0;
+      overflow: hidden;
     }
-
+    
     .topnav ul {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
       align-items: center;
+      list-style: none;
       padding: 0;
       margin: 0;
-      list-style: none;
       gap: 10px; /* Default gap */
     }
     
@@ -368,7 +371,7 @@
       color: #f2f2f2;
       text-align: center;
       text-decoration: none;
-      font-size: 17px; /* Ensure consistent font size */
+      font-size: 17px;
       display: flex;
       align-items: center;
       padding: 10px 15px;
@@ -387,7 +390,7 @@
     }
     
     .topnav button {
-      font-size: 17px; /* Ensure consistent font size for buttons */
+      font-size: 17px;
       color: #f2f2f2;
       background-color: #777764;
       border: 2px solid #777764;
@@ -406,6 +409,15 @@
       color: #fff;
     }
     
+    .topnav-right {
+      margin-left: auto; /* Pushes the letter to the far-right side */
+    }
+    
+    .topnav .letter {
+      font-size: 30px;
+      padding-right: 20px; /* Adds spacing between the letter and the right edge */
+    }
+    
     /* Media Queries */
     @media (max-width: 700px) {
       .topnav a span {
@@ -413,14 +425,7 @@
       }
     
       .topnav ul {
-        justify-content: space-between;
         gap: 8px; /* Adjust gap for smaller screens */
-      }
-    }
-    
-    @media (max-width: 700px) {
-      .topnav ul {
-        gap: 5px; /* Adjust gap for even smaller screens */
       }
     }
     
@@ -437,13 +442,21 @@
       .topnav a i {
         font-size: 1.2rem;
       }
+    
+      .topnav-right .letter {
+        font-size: 24px;
+        padding-right: 10px;
+      }
     }
     
-    @media (max-width: 300px) {
+    @media (max-width: 299px) {
+      .topnav {
+        flex-direction: column;
+      }
+    
       .topnav ul {
         flex-direction: column;
         align-items: center;
-        gap: 3px; /* Reduced gap for very small screens */
       }
     
       .topnav button {
@@ -454,7 +467,13 @@
       .topnav a i {
         font-size: 1.2rem;
       }
+    
+      .topnav-right .letter {
+        font-size: 20px;
+        padding-right: 5px;
+      }
     }
+    
     .footer {
       background-color: #777764;
       color: #ebebeb;
@@ -517,6 +536,9 @@
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#resume">Resume</button>
             </li>
           </ul>
+          <div class="topright-nav">
+          <a href="#" class="letter">H.</a>
+        </div>
         </div>
       </div>
     </main>
